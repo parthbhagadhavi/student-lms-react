@@ -1,0 +1,38 @@
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .nav-links a:hover {
+    color: #ffcc00;
+  }
+
+  /* Responsive for small screens */
+  @media (max-width: 600px) {
+    .nav-links {
+      display: none;
+    }
+}

@@ -1,0 +1,43 @@
+{
+  "posts": [],
+  "users": [
+    {
+      "id": "ce69",
+      "fullname": "aman",
+      "email": "lulu@gmail.com",
+      "username": "firozsavant170@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "441b",
+      "fullname": "parth",
+      "email": "pgadhavi878@gmail.com",
+      "username": "chocalaty_boy333",
+      "password": "123456789"
+    },
+    {
+      "id": "c77f",
+      "fullname": "parth",
+      "email": "pgadhavi878@gmail.com",
+      "username": "chocalaty_boy333",
+      "password": "123456789"
+    }
+  ],
+  "login": [
+    {
+      "id": "69",
+      "username": "lulu@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "68",
+      "username": "pgadhavi878@gmail.com",
+      "password": "123456789"
+    },
+    {
+      "id": 31,
+      "username": "pgadhavi878@gmail.com",
+      "password": "123456789"
+    }
+  ]
+}

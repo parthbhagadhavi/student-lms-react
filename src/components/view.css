@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.AddButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  background-color: #e74c3c;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.AddButton:hover {
+  background-color: #c0392b;
+}
+
+.button-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.button-row button {
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.button-row button:hover {
+  background-color: #2980b9;
+}
+
+.card-wrapper {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  transition: 0.2s;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #f0f2f5;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.emoji-icon {
+  font-size: 28px;
+}
+
+.card-content {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.title-row h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #2c3e50;
+}
+.std-tag {
+  background-color: #d6ecff;
+  color: #1976d2;
+  padding: 3px 10px;
+  font-size: 12px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.info-group {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.info-row {
+  margin-bottom: 6px;
+}
+.info-row code {
+  background: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.action-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.edit-btn,
+.delete-btn,
+.visit-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.edit-btn {
+  color: #ff9800;
+  background: #fff3e0;
+}
+.edit-btn:hover {
+  background: #ffe0b2;
+}
+.delete-btn {
+  color: #f44336;
+  background: #ffebee;
+}
+.delete-btn:hover {
+  background: #ffcdd2;
+}
+.visit-btn {
+  color: #2196f3;
+  background: #e3f2fd;
+  text-decoration: none;
+}
+.visit-btn:hover {
+  background: #bbdefb;
+}
