@@ -4,6 +4,9 @@ import './singin.css'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import { FaUser, FaEnvelope, FaLock, FaUserCircle } from "react-icons/fa";
+import { Link } from 'react-router-dom'
+import Swal from 'sweetalert2'
+
 function Singin() {
 
     const navigator=useNavigate()
@@ -26,7 +29,11 @@ function Singin() {
         const handlesubmit=async(e)=>{
             e.preventDefault()
             await axios.post('http://localhost:3000/users',input)
-
+            Swal.fire({
+              title: "Sign-up Successfully..!",
+              icon: "success",
+              draggable: true
+            });
             navigator('/login')
         }
     return (
@@ -86,7 +93,7 @@ function Singin() {
           <button type="submit" className="signup-btn">Sign Up</button>
         </form>
         <div className="footer">
-          Already have an account? <a href="#">Login here</a>
+          Already have an account? <Link to='/login'>Login here</Link> 
         </div>
       </div>
     </div>

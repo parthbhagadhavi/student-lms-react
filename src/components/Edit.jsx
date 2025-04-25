@@ -7,6 +7,8 @@ import { nanoid } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { FaGlobe, FaUser, FaEnvelope, FaLock } from "react-icons/fa";
 import Nav from './Nav';
+import Swal from 'sweetalert2'
+
 
 function Edit() {
   const location = useLocation();
@@ -42,6 +44,11 @@ function Edit() {
       email: '',
       password: '',
     });
+    Swal.fire({
+      title: "Updated Successfully...!",
+      icon: "success",
+      draggable: true
+    });
     navigate('/view', {state : "Edit"});
   };
 
@@ -58,7 +65,7 @@ function Edit() {
       const res = await axios.get('http://localhost:3000/login');
   console.log(res.data);
   if (res.data.length === 0) {
-    nav('/login');
+    navigate('/login');
   } else {
     navigate('/edit');
   }

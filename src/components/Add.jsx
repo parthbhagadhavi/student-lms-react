@@ -6,6 +6,8 @@ import './Add.css';
 import { nanoid } from '@reduxjs/toolkit';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import Swal from 'sweetalert2'
+
 import Nav from './Nav';
 function Add() {
   const navigate = useNavigate();
@@ -38,7 +40,15 @@ function Add() {
       email: '',
       password: '',
     });
+
     navigate('/view', {state : "Add"}); 
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "Your data has been added",
+      showConfirmButton: false,
+      timer: 1500
+    });
   };
 
   const handleChange = (e) => {
@@ -53,7 +63,7 @@ function Add() {
         const res = await axios.get('http://localhost:3000/login');
     console.log(res.data);
     if (res.data.length === 0) {
-      nav('/login');
+      navigate('/login');
     } else {
       navigate('/add');
     }

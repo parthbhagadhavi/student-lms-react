@@ -3,6 +3,8 @@ import "./Login.css"
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { FaEnvelope, FaLock } from "react-icons/fa";
+import Swal from 'sweetalert2'
+
 function Login() {
     const nav = useNavigate()
     const [input, setinput] = useState({
@@ -27,13 +29,24 @@ function Login() {
         )
         if (user) {
             await axios.post('http://localhost:3000/login', input)
-            
+             Swal.fire({
+                          title: "Login Successfully..!",
+                          icon: "success",
+                          draggable: true
+                        });
             nav('/view')
+
 
 
         }
         else {
-            alert('Please enter the correct information');
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Please enter currect email & password...!",
+            footer: '<a href="#">Why do I have this issue?</a>'
+          });
+          
 
         }
 
@@ -76,7 +89,7 @@ function Login() {
           <button type="submit" className="login-btn">Login</button>
         </form>
         <div className="footer">
-          <p>Don't have an account? <Link to="/signin">Sign up</Link></p>
+          <p>Don't have an account? <Link to="/">Sign up</Link></p>
         </div>
       </div>
     </div>

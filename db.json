@@ -1,5 +1,22 @@
 {
-  "posts": [],
+  "posts": [
+    {
+      "id": "KKtgBw3u-H3FiFX6Et_Zu",
+      "url": "https://colorhunt.co/palettes/peach",
+      "name": "parth",
+      "std": "12",
+      "email": "pgadhavi878@gmail.com",
+      "password": "98989898"
+    },
+    {
+      "id": "uA4PKrPLCmZDjoopcPKEg",
+      "url": "https://colorhunt.co/palettes/peach",
+      "name": "parth",
+      "std": "11",
+      "email": "pgadhavi878@gmail.com",
+      "password": "321321"
+    }
+  ],
   "users": [
     {
       "id": "ce69",
@@ -21,6 +38,34 @@
       "email": "pgadhavi878@gmail.com",
       "username": "chocalaty_boy333",
       "password": "123456789"
+    },
+    {
+      "id": "ead8",
+      "fullname": "parth",
+      "email": "pgadhavi878@gmail.com",
+      "username": "chocalaty_boy333",
+      "password": "11111111"
+    },
+    {
+      "id": "3daf",
+      "fullname": "parth",
+      "email": "pgadhavi878@gmail.com",
+      "username": "chocalaty_boy333",
+      "password": "1111111111"
+    },
+    {
+      "id": "4497",
+      "fullname": "parth",
+      "email": "pgadhavi878@gmail.com",
+      "username": "pgadhavi878@gmail.com",
+      "password": "14141414"
+    },
+    {
+      "id": "c341",
+      "fullname": "parth",
+      "email": "pgadhavi878@gmail.com",
+      "username": "chocalaty_boy333",
+      "password": "9825984678"
     }
   ],
   "login": [
@@ -35,9 +80,29 @@
       "password": "123456789"
     },
     {
-      "id": 31,
+      "id": "31",
       "username": "pgadhavi878@gmail.com",
       "password": "123456789"
+    },
+    {
+      "id": 13,
+      "username": "pgadhavi878@gmail.com",
+      "password": "11111111"
+    },
+    {
+      "id": 39,
+      "username": "pgadhavi878@gmail.com",
+      "password": "14141414"
+    },
+    {
+      "id": 87,
+      "username": "pgadhavi878@gmail.com",
+      "password": "14141414"
+    },
+    {
+      "id": 0,
+      "username": "pgadhavi878@gmail.com",
+      "password": "9825984678"
     }
   ]
 }
